@@ -1,0 +1,46 @@
+/* Normalise browser styles to make our life easier */
+@import-normalize;
+
+/* Import font files */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500&display=swap');
+
+/* Global styling */
+body {
+    background: #355C7D;
+    color: #F67280;
+    display: flex;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0 2rem;
+    width: 100vw;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 4 / span 6;
+
+    h1 {
+        border-bottom: 2px solid #F67280;
+        font-family: 'IBM Plex Serif', serif;
+        font-weight: 500;
+        font-size: 4rem;
+        margin: 0 0 0.25em;
+        padding: 0 0.25em 0.25em;
+    }
+
+    p {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+}
