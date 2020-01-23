@@ -15,7 +15,7 @@ function Home() {
             </div>
 
             <div className='socials'>
-                <Obfuscate className='socials__link' email='mattpodge@gmail.com'>
+                <Obfuscate className='socials__link' email='mattpodge@gmail.com' headers={{ subject: 'Sending hello through mlodge.me!'}} title='Send me a friendly email'>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </Obfuscate>
                 <a className='socials__link' href='https://www.linkedin.com/in/matthew-lodge-90753ba1/' title='Visit my LinkedIn profile'>
