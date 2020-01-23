@@ -1,2 +1,0 @@
-(this.webpackJsonpselena=this.webpackJsonpselena||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var r=t(0),a=t.n(r),l=t(2),c=t.n(l);t(8);var s=function(){return a.a.createElement("div",{class:"title"},a.a.createElement("h1",null,"Matthew Lodge"),a.a.createElement("p",null,"User Interface & Experience Designer"))};var u=function(){return a.a.createElement(s,null)};c.a.render(a.a.createElement(u,null),document.getElementById("root"))}},[[3,1,2]]]);
-//# sourceMappingURL=main.45cd7cb0.chunk.js.map
