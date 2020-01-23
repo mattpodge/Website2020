@@ -5,12 +5,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
 
 /* Global styling */
+html {
+    height: 100%;
+}
+
 body {
     background: #050A0B url('./App/imgs/gradient--dark.png') bottom repeat-x;
     color: #DAF2F3;
     display: flex;
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
