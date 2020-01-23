@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/selena/static/css/main.e620833f.chunk.css",
+    "main.css": "/selena/static/css/main.3175f7e1.chunk.css",
     "main.js": "/selena/static/js/main.45cd7cb0.chunk.js",
     "main.js.map": "/selena/static/js/main.45cd7cb0.chunk.js.map",
     "runtime-main.js": "/selena/static/js/runtime-main.f5537d0a.js",
@@ -8,15 +8,15 @@
     "static/js/2.383282f5.chunk.js": "/selena/static/js/2.383282f5.chunk.js",
     "static/js/2.383282f5.chunk.js.map": "/selena/static/js/2.383282f5.chunk.js.map",
     "index.html": "/selena/index.html",
-    "precache-manifest.08dd333c29506a236ba0f43d097ce48f.js": "/selena/precache-manifest.08dd333c29506a236ba0f43d097ce48f.js",
+    "precache-manifest.c6d613edcb683f40085f0f9dbe1821f3.js": "/selena/precache-manifest.c6d613edcb683f40085f0f9dbe1821f3.js",
     "service-worker.js": "/selena/service-worker.js",
-    "static/css/main.e620833f.chunk.css.map": "/selena/static/css/main.e620833f.chunk.css.map",
+    "static/css/main.3175f7e1.chunk.css.map": "/selena/static/css/main.3175f7e1.chunk.css.map",
     "static/js/2.383282f5.chunk.js.LICENSE": "/selena/static/js/2.383282f5.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.f5537d0a.js",
     "static/js/2.383282f5.chunk.js",
-    "static/css/main.e620833f.chunk.css",
+    "static/css/main.3175f7e1.chunk.css",
     "static/js/main.45cd7cb0.chunk.js"
   ]
 }
