@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1994a94d08c35bcc7bdb415107f62340",
+    "revision": "7675996f9a293fd8c97880ae51f9ddc2",
     "url": "/selena/index.html"
   },
   {
-    "revision": "5d5e9df49a64f95319a3",
-    "url": "/selena/static/css/main.27777a34.chunk.css"
+    "revision": "defa600bca1909ac9b2d",
+    "url": "/selena/static/css/main.a67dbefc.chunk.css"
   },
   {
     "revision": "aa25f994a9980753dcfd",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/selena/static/js/2.6cdf99e3.chunk.js.LICENSE"
   },
   {
-    "revision": "5d5e9df49a64f95319a3",
+    "revision": "defa600bca1909ac9b2d",
     "url": "/selena/static/js/main.3677ff15.chunk.js"
   },
   {
