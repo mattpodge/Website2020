@@ -3,18 +3,22 @@ import React from 'react';
 import Obfuscate from 'react-obfuscate';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 function Home() {
     return(
         <React.Fragment>
             <div className='title'>
                 <h1>Matthew Lodge</h1>
-                <p>User Interface &amp; Experience Designer</p>
+                <p>Graphic, UI, Web Design, and Branding</p>
             </div>
 
             <div className='socials'>
+                <a className='socials_link' href='../downloads/matthew_lodge-portfolio_2020.pdf' title='Download my portfolio as a PDF'>
+                    <FontAwesomeIcon icon={faFilePdf} />
+                </a>
                 <Obfuscate className='socials__link' email='mattpodge@gmail.com' headers={{ subject: 'Sending hello through mlodge.me!'}} title='Send me a friendly email'>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </Obfuscate>
