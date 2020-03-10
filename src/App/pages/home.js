@@ -12,11 +12,11 @@ function Home() {
         <React.Fragment>
             <div className='title'>
                 <h1>Matthew Lodge</h1>
-                <p>Graphic, UI, Web Design, and Branding</p>
+                <p>UI/UX, Web, and Graphic Design</p>
             </div>
 
             <div className='socials'>
-                <a className='socials_link' href='../downloads/matthew_lodge-portfolio_2020.pdf' title='Download my portfolio as a PDF'>
+                <a className='socials__link' href='../downloads/matthew_lodge-portfolio_2020.pdf' title='Download my portfolio as a PDF'>
                     <FontAwesomeIcon icon={faFilePdf} />
                 </a>
                 <Obfuscate className='socials__link' email='mattpodge@gmail.com' headers={{ subject: 'Sending hello through mlodge.me!'}} title='Send me a friendly email'>
