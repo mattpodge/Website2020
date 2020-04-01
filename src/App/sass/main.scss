@@ -1,2 +1,25 @@
-/* Variables */
-@import './variables/button';
+/* Shared
+ * Imports shared variables, mixins, and functions all in one go
+ */
+@import 'shared';
+
+/* Normalize
+ * Import the normailze stylesheet as a starting foundation
+ */
+@import-normalize;
+
+/* Global
+ * Styles that apply to every section/page of the application
+ */
+ html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    background:#FFFFFF;
+    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+}
