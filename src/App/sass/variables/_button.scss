@@ -1,27 +1,36 @@
 /* Regular */
-$btn__background: #FFFFFF;
+$btn__background: #FFFFFF !default;
 
-$btn__border-colour: #000000;
-$btn__border-radius: 2px;
-$btn__border-radius-top-left: $btn__border-radius;
-$btn__border-radius-top-right: $btn__border-radius;
-$btn__border-radius-bottom-right: $btn__border-radius;
-$btn__border-radius-bottom-left: $btn__border-radius;
-$btn__border-style: solid;
-$btn__border-width: 1px;
+$btn__border-colour: #000000 !default;
+$btn__border-style: solid !default;
+$btn__border-width: 2px !default;
 
-$btn__font-colour: #000000;
-$btn__font-size: 1rem;
-$btn__font-style: uppercase;
-$btn__font-weight: 700;
+$btn__border-radius: 4px !default;
+$btn__border-radius-top-left: $btn__border-radius !default;
+$btn__border-radius-top-right: $btn__border-radius !default;
+$btn__border-radius-bottom-right: $btn__border-radius !default;
+$btn__border-radius-bottom-left: $btn__border-radius !default;
 
-$btn__padding: 1rem;
-$btn__padding-x: $btn__padding * 1.5;
-$btn__padding-y: $btn__padding;
+$btn__cursor: pointer !default;
+
+$btn__font-colour: #000000 !default;
+$btn__font-size: 1rem !default;
+$btn__font-style: uppercase !default;
+$btn__font-weight: 700 !default;
+
+$btn__padding: 1rem !default;
+$btn__padding-x: $btn__padding * 1.5 !default;
+$btn__padding-y: $btn__padding !default;
 
 /* Hover */
-$btn__background--hover: #000000;
-
-$btn__font-colour--hover: #FFFFFF;
+$btn__background--hover: #000000 !default;
+$btn__font-colour--hover: #FFFFFF !default;
 
 /* Active */
+$btn__background--active: $btn__background--hover !default;
+
+/* Disabled */
+$btn__background--disabled: #CCCCCC !default;
+$btn__border-colour--disabled: #000000 !default;
+$btn__cursor--disabled: not-allowed !default;
+$btn__font-colour--disabled: #575757 !default;

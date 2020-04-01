@@ -5,7 +5,7 @@ import { Button } from '../components/button';
 function Scratchpad() {
     return(
         <React.Fragment>
-            <Button type='reset'>This is my button</Button>
+            <Button>This is my button</Button>
         </React.Fragment>
     )
 }
