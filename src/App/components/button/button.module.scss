@@ -1,0 +1,25 @@
+@import '../../sass/main';
+
+.button {
+    background: $btn__background;
+    border: $btn__border-width $btn__border-style $btn__border-colour;
+    border: {
+        top-left-radius: $btn__border-radius-top-left;
+        top-right-radius: $btn__border-radius-top-right;
+        bottom-right-radius: $btn__border-radius-bottom-right;
+        bottom-left-radius: $btn__border-radius-bottom-left;
+    };
+    color: $btn__font-colour;
+    font: {
+        family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+        size: 0.875rem;
+        weight: $btn__font-weight;
+    };
+    padding: {
+        top: $btn__padding-y;
+        right: $btn__padding-x;
+        bottom: $btn__padding-y;
+        left: $btn__padding-x;
+    };
+    text-transform: $btn__font-style;
+}

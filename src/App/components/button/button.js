@@ -1,9 +1,13 @@
 import React from 'react';
 
-function Btn() {
+import styles from './button.module.scss';
+
+function Button(props) {
     return(
-        <button>Testing!</button>
+        <button className={styles.button}>
+            {props.children}
+        </button>
     )
 }
 
-export default Btn;
+export default Button;

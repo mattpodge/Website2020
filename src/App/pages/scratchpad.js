@@ -1,9 +1,11 @@
 import React from 'react';
 
+import { Button } from '../components/button';
+
 function Scratchpad() {
     return(
         <React.Fragment>
-            Hello world!
+            <Button>This is my button</Button>
         </React.Fragment>
     )
 }

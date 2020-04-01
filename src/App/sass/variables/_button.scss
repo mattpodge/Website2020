@@ -1,0 +1,27 @@
+/* Regular */
+$btn__background: #FFFFFF;
+
+$btn__border-colour: #000000;
+$btn__border-radius: 2px;
+$btn__border-radius-top-left: $btn__border-radius;
+$btn__border-radius-top-right: $btn__border-radius;
+$btn__border-radius-bottom-right: $btn__border-radius;
+$btn__border-radius-bottom-left: $btn__border-radius;
+$btn__border-style: solid;
+$btn__border-width: 1px;
+
+$btn__font-colour: #000000;
+$btn__font-size: 1rem;
+$btn__font-style: uppercase;
+$btn__font-weight: 700;
+
+$btn__padding: 1rem;
+$btn__padding-x: $btn__padding * 1.5;
+$btn__padding-y: $btn__padding;
+
+/* Hover */
+$btn__background--hover: #000000;
+
+$btn__font-colour--hover: #FFFFFF;
+
+/* Active */
