@@ -1,0 +1,59 @@
+/* Make Palette
+ * Somewhat based around the colour palettes found in the Google Material design guidelines, this function allows us to
+ * programmatically build colour palettes as best they can. These may not be perfect for every colour option out of the box
+ * so you may need to tweak the numbers here if things don't quite work out.
+ */
+
+@function make-palette($hex) {
+    /* Output a colour palette */
+    @if (saturation($hex) > 0) {
+        @return (
+            'main': $hex,
+            'light': lighten(saturate(adjust-hue($hex, 4), 12), 24),
+            'dark': darken(saturate(adjust-hue($hex, -4), 12), 32),
+            'tone': (
+                '50': lighten(saturate(adjust-hue($hex, -4), 28), 32),
+                '100': lighten(saturate(adjust-hue($hex, -4), 20), 24),
+                '200': lighten(saturate(adjust-hue($hex, -4), 16), 20),
+                '300': lighten(saturate(adjust-hue($hex, -4), 12), 16),
+                '400': lighten(saturate(adjust-hue($hex, -4), 8), 12),
+                '500': $hex,
+                '600': darken(saturate(adjust-hue($hex, 4), 8), 12),
+                '700': darken(saturate(adjust-hue($hex, 4), 12), 16),
+                '800': darken(saturate(adjust-hue($hex, 4), 16), 20),
+                '900': darken(saturate(adjust-hue($hex, 4), 20), 24),
+            ),
+            'alpha': (
+                '80': transparentize($hex, 0.2),
+                '60': transparentize($hex, 0.4),
+                '40': transparentize($hex, 0.6),
+                '20': transparentize($hex, 0.8),
+            )
+        )
+    /* Output a greyscale palette */
+    } @else {
+        @return (
+            'main': $hex,
+            'light': lighten($hex, 36),
+            'dark': darken($hex, 20),
+            'tone': (
+                '50': lighten($hex, 48),
+                '100': lighten($hex, 32),
+                '200': lighten($hex, 24),
+                '300': lighten($hex, 16),
+                '400': lighten($hex, 8),
+                '500': $hex,
+                '600': darken($hex, 8),
+                '700': darken($hex, 16),
+                '800': darken($hex, 24),
+                '900': darken($hex, 32),
+            ),
+            'alpha': (
+                '80': transparentize($hex, 0.2),
+                '60': transparentize($hex, 0.4),
+                '40': transparentize($hex, 0.6),
+                '20': transparentize($hex, 0.8),
+            )
+        )
+    }
+}

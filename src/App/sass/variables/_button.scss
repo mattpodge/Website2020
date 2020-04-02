@@ -1,7 +1,7 @@
 /* Regular */
-$btn__background: #FFFFFF !default;
+$btn__background: colour('white') !default;
 
-$btn__border-colour: #000000 !default;
+$btn__border-colour: colour('primary') !default;
 $btn__border-style: solid !default;
 $btn__border-width: 2px !default;
 
@@ -13,7 +13,7 @@ $btn__border-radius-bottom-left: $btn__border-radius !default;
 
 $btn__cursor: pointer !default;
 
-$btn__font-colour: #000000 !default;
+$btn__font-colour: colour('primary') !default;
 $btn__font-size: 1rem !default;
 $btn__font-style: uppercase !default;
 $btn__font-weight: 700 !default;
@@ -23,14 +23,14 @@ $btn__padding-x: $btn__padding * 1.5 !default;
 $btn__padding-y: $btn__padding !default;
 
 /* Hover */
-$btn__background--hover: #000000 !default;
-$btn__font-colour--hover: #FFFFFF !default;
+$btn__background--hover: colour('primary') !default;
+$btn__font-colour--hover: colour('white') !default;
 
 /* Active */
 $btn__background--active: $btn__background--hover !default;
 
 /* Disabled */
-$btn__background--disabled: #CCCCCC !default;
-$btn__border-colour--disabled: #000000 !default;
+$btn__background--disabled: colour('white') !default;
+$btn__border-colour--disabled: colour('primary', 'alpha', '40') !default;
 $btn__cursor--disabled: not-allowed !default;
-$btn__font-colour--disabled: #575757 !default;
+$btn__font-colour--disabled: colour('primary', 'alpha', '40') !default;

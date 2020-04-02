@@ -1,0 +1,10 @@
+/* Deep Get
+ * Function developed to allow us to get values from multi-level variable maps in SASS. Taken from an old (2015) CSS-Tricks post.
+ */
+ 
+ @function deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}

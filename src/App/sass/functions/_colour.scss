@@ -1,0 +1,11 @@
+/* Colour
+ * This extends the deep-get function to make calling colours from our own palette maps easier.
+ */
+ 
+ @function colour($keys...) {
+    @if (length($keys) > 1) {
+        @return deep-get($colour-palettes, $keys...);
+    } @else {
+        @return deep-get($colour-palettes, nth($keys, 1), 'main');
+    }
+}
