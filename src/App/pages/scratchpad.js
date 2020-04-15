@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { OutlineButton } from '../components/button';
+import { Button } from '../components/button';
 
 function Scratchpad() {
     return(
         <React.Fragment>
-            <OutlineButton>Default button</OutlineButton>
+            <Button className='test-class'>Default button</Button>
         </React.Fragment>
     )
 }

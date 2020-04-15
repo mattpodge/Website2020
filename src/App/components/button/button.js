@@ -1,23 +1,32 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import Proptypes from 'prop-types';
 
 /* Stylesheets */
 import styles from './button.module.scss';
 
+/* Bind classnames to modular styles */
 let cx = classNames.bind(styles);
 
 function Button(props) {
-    let className = cx({
-        button: true,
+    let {className, variant, block, ...rest} = props;
+    let classes = cx('button', {
         'button--outline': props.variant === 'outline',
         'button--block': props.block
-    });
+    }, className);
+
     return(
-        <button className={className} {...props}>
+        <button className={classes} {...rest}>
             {props.children}
         </button>
     )
 }
+
+Button.propTypes = {
+    className: Proptypes.string,
+    block: Proptypes.bool,
+    variant: Proptypes.oneOf(['outline'])
+};
 
 function RegularButton(props) {
     return(
@@ -29,7 +38,7 @@ function RegularButton(props) {
 
 function RegularBlockButton(props) {
     return(
-        <Button block={true} {...props}>
+        <Button block {...props}>
             {props.children}
         </Button>
     )
@@ -45,7 +54,7 @@ function OutlineButton(props) {
 
 function OutlineBlockButton(props) {
     return(
-        <Button variant='outline' block={true} {...props}>
+        <Button variant='outline' block {...props}>
             {props.children}
         </Button>
     )
