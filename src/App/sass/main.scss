@@ -6,9 +6,16 @@
 /* Global
  * Styles that apply to every section/page of the application
  */
+
+ * {
+     &, &:before, &:after {
+         box-sizing: border-box;
+     }
+ }
+
  html, body {
-    box-sizing: border-box;
     height: 100%;
+    font-size: 100%;
 }
 
 body {

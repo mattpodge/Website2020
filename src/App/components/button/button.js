@@ -12,13 +12,19 @@ function Button(props) {
     let {className, variant, block, ...rest} = props;
     let classes = cx('button', {
         'button--outline': props.variant === 'outline',
-        'button--block': props.block
+        'button--block': props.block,
+        'button--link': props.href
     }, className);
 
+    let button;
+    if(props.href) {
+        button = <a href={props.href} className={classes} {...rest}>{props.children}</a>;
+    } else {
+        button = <button className={classes} {...rest}>{props.children}</button>;
+    }
+
     return(
-        <button className={classes} {...rest}>
-            {props.children}
-        </button>
+        button
     )
 }
 

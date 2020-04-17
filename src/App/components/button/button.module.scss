@@ -2,7 +2,11 @@
 
 .button {
     background: $btn__background;
-    border: none {
+    border: {
+        color: $btn__border-colour;
+        style: $btn__border-style;
+        width: $btn__border-width;
+
         top-left-radius: $btn__border-radius-top-left;
         top-right-radius: $btn__border-radius-top-right;
         bottom-right-radius: $btn__border-radius-bottom-right;
@@ -24,11 +28,13 @@
         bottom: $btn__padding-y;
         left: $btn__padding-x;
     };
+    text-decoration: none;
     text-transform: $btn__font-style;
     vertical-align: middle;
 
     &:hover, &:focus {
         background: $btn__background--hover;
+        border-color: $btn__border-colour--hover;
         color: $btn__font-colour--hover;
     }
 
@@ -38,33 +44,29 @@
 
     &:disabled {
         background: $btn__background--disabled;
+        border-color: $btn__border-colour--disabled;
         color: $btn__font-colour--disabled;
         cursor: $btn__cursor--disabled;
     }
 
     &--outline {
-        background: $btn--outline__background;
-        border: {
-            color: $btn--outline__border-colour;
-            style: $btn--outline__border-style;
-            width: $btn--outline__border-width;
-        };
-        color: $btn--outline__font-colour;
+        background: $outline-btn__background;
+        color: $outline-btn__font-colour;
 
         &:hover, &:focus {
-            background: $btn--outline__background--hover;
-            color: $btn--outline__font-colour--hover;
+            background: $outline-btn__background--hover;
+            color: $outline-btn__font-colour--hover;
         }
     
         &:active {
-            background: $btn--outline__background--active;
+            background: $outline-btn__background--active;
         }
     
         &:disabled {
-            background: $btn--outline__background--disabled;
-            border-color: $btn--outline__border-colour--disabled;
-            color: $btn--outline__font-colour--disabled;
-            cursor: $btn--outline__cursor--disabled;
+            background: $outline-btn__background--disabled;
+            border-color: $outline-btn__border-colour--disabled;
+            color: $outline-btn__font-colour--disabled;
+            cursor: $outline-btn__cursor--disabled;
         }
     }
 

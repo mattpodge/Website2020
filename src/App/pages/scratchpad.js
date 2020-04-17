@@ -1,11 +1,13 @@
 import React from 'react';
 
-import { Button } from '../components/button';
+import { Button, OutlineButton } from '../components/button';
 
 function Scratchpad() {
     return(
         <React.Fragment>
             <Button className='test-class'>Default button</Button>
+            <br />
+            <OutlineButton href='https://www.google.co.uk' target='_blank'>Default Button</OutlineButton>
         </React.Fragment>
     )
 }
