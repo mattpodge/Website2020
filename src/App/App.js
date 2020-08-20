@@ -1,9 +1,9 @@
 import React from 'react';
-import { Scratchpad } from './pages';
+import { Home } from './pages';
 
 function App() {
   return (
-    <Scratchpad />
+    <Home />
   );
 }
 

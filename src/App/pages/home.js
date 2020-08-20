@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFilePdf } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+/* Stylesheets*/
+import '../sass/pages/home.scss';
+
 
 function Home() {
     return(
