@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Button, OutlineButton } from '../components/button';
+import { Button, OutlineButton } from '../../components/button';
+
+/* Stylesheets*/
+import './scratchpad.scss';
 
 function Scratchpad() {
     return(
