@@ -6,7 +6,7 @@ import './home.scss';
 
 
 function Home() {
-    const [pageId, setPageId] = useState('homepage');
+    const [pageId] = useState('homepage');
     useEffect(() => {
         document.body.classList.add(pageId);
         return() => {

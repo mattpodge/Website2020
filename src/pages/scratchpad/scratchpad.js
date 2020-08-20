@@ -6,7 +6,7 @@ import { Button, OutlineButton } from '../../components/button';
 import './scratchpad.scss';
 
 function Scratchpad() {
-    const [pageId, setPageId] = useState('scratchpad');
+    const [pageId] = useState('scratchpad');
     useEffect(() => {
         document.body.classList.add(pageId);
         return() => {
