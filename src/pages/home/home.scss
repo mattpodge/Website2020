@@ -4,25 +4,29 @@
 
 /* Page specific elements */
 .homepage {
-    align-items: center;
     background: #333;
     color: rgba(255, 255, 255, 0.6);
-    display: flex;
     font-family: monospace;
-    flex: auto;
-    flex-direction: column;
-    justify-content: center;
+    
+    .container {
+        align-items: center;
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .heading {
-        font-size: 2rem;
+        font-size: clamp(1.125rem, calc(2rem + 1vw), 3rem);
         font-weight: 400;
         margin: 0 0 0.125em;
     }
 
     .subheading {
         color: rgba(255, 255, 255, 0.4);
-        font-size: 0.875rem;
+        font-size: clamp(0.75rem, calc(0.875rem + 1vw), 1rem);
         margin: 0;
+        white-space: nowrap;
 
         a {
             color: inherit;

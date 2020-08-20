@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { Button, OutlineButton } from '../../components/button';
 
@@ -6,6 +6,14 @@ import { Button, OutlineButton } from '../../components/button';
 import './scratchpad.scss';
 
 function Scratchpad() {
+    const [pageId, setPageId] = useState('scratchpad');
+    useEffect(() => {
+        document.body.classList.add(pageId);
+        return() => {
+            document.body.classList.remove(pageId);
+        }
+    }, [pageId]);
+
     return(
         <React.Fragment>
             <h1>Scratchpad</h1>

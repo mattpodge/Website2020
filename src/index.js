@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 /* Stylesheets*/
-import './App/sass/main.scss';
+import './sass/main.scss';
 
 /* App */
-import App from './App/App';
+import Selena from './Selena';
 
 ReactDOM.render(
-    <App />,
+    <Selena />,
     document.getElementById('root')
 );
