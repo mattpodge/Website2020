@@ -1,16 +1,15 @@
 /* Normalise browser styles to make our life easier */
 @import-normalize;
 
-/* Import font files */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
-
 /* Global styling */
+html {
+    font-size: clamp(14px, 10vw, 16px);
+}
 body {
-    background: #050A0B url('../../imgs/gradient--dark.png') bottom repeat-x;
-    color: #DAF2F3;
+    background: #333;
+    color: rgba(255, 255, 255, 0.6);
     display: flex;
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: calc(16px + 1vw);
+    font-family: monospace;
     margin: 0;
     padding: 0;
 }
@@ -24,37 +23,20 @@ body {
 
 .title {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    grid-column: 1 / -1;
     justify-content: center;
-    margin: 0 0 8rem;
+    margin: 0 2rem;
 
-
-    h1 {
-        font-size: 2.5em;
-        font-weight: 400;;
-        margin: 0 0 0.25em;
-        padding: 0;        
+    .heading {
+        font-size: 2rem;
+        margin: 0 0 0.125em;
     }
-    
-    p {
-        font-size: 1em;
-        font-weight: 500;
+
+    .subheading {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 0.875rem;
         margin: 0;
-    }
-}
-
-.socials {
-    display: flex;
-    font-size: 2rem;
-    justify-content: center;
-
-    &__link {
-        display: inline-block;
-        margin: 0 1rem;
-        &, &:visited {
-            color: inherit;
-        }
     }
 }
