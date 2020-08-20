@@ -3,6 +3,11 @@
  */
 @import 'shared';
 
+/* Normalize
+ * Import the Normalize.css module to start with a level field
+ */
+@import-normalize;
+
 /* Global
  * Styles that apply to every section/page of the application
  */

@@ -1,9 +1,11 @@
-/* Normalise browser styles to make our life easier */
-@import-normalize;
+/* Home
+ * Styles that will only apply to the Home page of the application
+ */
 
-/* Global styling */
+/* Global styling overrides */
 html {
-    font-size: clamp(14px, 10vw, 16px);
+    font-size: 16px;
+    font-size: clamp(14px, calc(16px + 1vw), 20px);
 }
 body {
     background: #333;
@@ -14,8 +16,9 @@ body {
     padding: 0;
 }
 
+/* Page specific elements */
 .container {
-    display: flex;;
+    display: flex;
     flex: auto;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +34,7 @@ body {
 
     .heading {
         font-size: 2rem;
+        font-weight: 400;
         margin: 0 0 0.125em;
     }
 
