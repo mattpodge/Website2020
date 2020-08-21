@@ -19,23 +19,44 @@
  }
 
 html {
-    font-size: 100%;
+    font-size: $body-fontsize;
     height: 100vh;
 }
 
 body {
-    background:#333;
-    color: #E6E6E6;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background:$body-background;
+    color: $body-colour;
+    font-family: $body-fontfamily;
+    line-height: $body-lineheight;
+    margin: $body-margin;
+    padding: $body-padding;
 }
 
 .container {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 0 $gutter;
     height: 100vh;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 0 calc(#{$gutter} / 2);
 
-    @media (min-width: 33.75rem) {
-        padding: 0 2rem;
+    @include media($break_sm) {
+        width: 420px;
+    }
+
+    @include media($break_md) {
+        width: 640px;
+    }
+
+    @include media($break_lg) {
+        width: 960px;
+    }
+
+    @include media($break_xl) {
+        width: 1140px;
+    }
+
+    .content {
+        grid-column: 1 / span $columns;
     }
 }
