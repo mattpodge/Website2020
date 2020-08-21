@@ -3,10 +3,16 @@
 @import './functions/deep-get';
 @import './functions/colour';
 
-/* Variables */
+/* Mixins */
+@import './mixins/media-queries';
 
-/* General */
+
+/* General Variables */
 @import './variables/colours';
+@import './variables/grid';
 
-/* Components */
+/* Base Variables */
+@import './variables/base';
+
+/* Component Variables */
 @import './variables/button';

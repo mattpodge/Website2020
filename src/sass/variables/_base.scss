@@ -1,0 +1,25 @@
+/* Base Variables
+ * Setup variables for the base level layout elements like html, and body
+ */
+
+$background-dark: #333 !default;
+$background-light: #FFF !default;
+
+$type-dark: #333 !default;
+$type-light: #E6E6E6 !default;
+
+$fontfamily-sansserif: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif !default;
+$fontfamily-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
+$fontfamily-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace !default;
+
+$fontsize: 16px !default;
+$lineheight: 1.25 !default;
+
+/* HTML & Body */
+$body-background: $background-dark !default;
+$body-colour: $type-light !default;
+$body-fontfamily: $fontfamily-sansserif !default;
+$body-fontsize: $fontsize !default;
+$body-lineheight: $lineheight !default;
+$body-margin: 0 !default;
+$body-padding: 0 !default;

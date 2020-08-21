@@ -4,8 +4,6 @@
 
 /* Page specific elements */
 .homepage {
-    background: #333;
-    color: rgba(255, 255, 255, 0.6);
     font-family: monospace;
     
     .container {
@@ -23,17 +21,18 @@
     }
 
     .subheading {
-        color: rgba(255, 255, 255, 0.4);
         font-size: clamp(0.75rem, calc(0.875rem + 1vw), 1rem);
         margin: 0;
         white-space: nowrap;
 
         a {
             color: inherit;
+            opacity: 0.4;
             text-decoration: none;
+            transition: 0.3s;
 
             &:hover {
-                color: rgba(255, 255, 255, 0.6);
+                opacity: 1;
             }
         }
     }
