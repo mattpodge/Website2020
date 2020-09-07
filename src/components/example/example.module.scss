@@ -1,0 +1,14 @@
+@import '../../sass/shared';
+
+.example {
+    border: 1px solid colour('grey');
+    border-radius: 4px;
+    &__iframe {
+        background: colour('white');
+        border-radius: 4px 4px 0 0;
+        padding: 1rem;
+    }
+    &__code {
+        padding: 1rem;
+    }
+}
