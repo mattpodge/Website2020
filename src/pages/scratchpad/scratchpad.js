@@ -18,7 +18,7 @@ function Scratchpad() {
     return(
         <main className='content'>
             <h1>Scratchpad</h1>
-            <Example>
+            <Example title='Button Components'>
                 <Button>Button Test</Button>
             </Example>
         </main>
