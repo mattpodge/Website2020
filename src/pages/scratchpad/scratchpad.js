@@ -19,7 +19,7 @@ function Scratchpad() {
         <main className='content'>
             <h1>Scratchpad</h1>
             <Example title='Button Components'>
-                <Button>Button Test</Button>
+                <Button href='https://www.google.com'>Button Test</Button>
             </Example>
         </main>
     )
