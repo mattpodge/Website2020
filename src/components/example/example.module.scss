@@ -1,0 +1,16 @@
+@import '../../sass/shared';
+
+.example {
+    border: 1px solid colour('grey');
+    border-radius: 4px;
+    &__iframe {
+        background: colour('white');
+        border-radius: 0 0 4px 4px;
+        padding: 1rem;
+    }
+    &__header {
+        font-size: 0.875rem;
+        font-style: italic;
+        padding: 0.5rem 1rem;
+    }
+}

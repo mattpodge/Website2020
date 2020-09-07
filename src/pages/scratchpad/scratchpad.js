@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { Button, OutlineButton } from '../../components/button';
+import { Example } from '../../components/example';
+import { Button } from '../../components/button';
 
 /* Stylesheets*/
 import './scratchpad.scss';
@@ -17,9 +18,9 @@ function Scratchpad() {
     return(
         <main className='content'>
             <h1>Scratchpad</h1>
-            <Button className='test-class'>Default button</Button>
-            <br />
-            <OutlineButton href='https://www.google.co.uk' target='_blank'>Default Button</OutlineButton>
+            <Example title='Button Components'>
+                <Button href='https://www.google.com'>Button Test</Button>
+            </Example>
         </main>
     )
 }
