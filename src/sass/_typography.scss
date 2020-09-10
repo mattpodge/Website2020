@@ -1,5 +1,3 @@
-$modularscale: 1.2 !default;
-
 $body-fontsize: $fontsize-base * 0.875 !default;
 $body-fontweight: 400 !default;
 
@@ -7,6 +5,7 @@ $heading-fontfamily: $fontfamily-base !default;
 $heading-fontweight: 400 !default;
 $heading-lineheight: 1.125 !default;
 
+$modularscale: 1.2 !default; // Use a modular scale to size our headings in relation to each other
 $h6-fontsize: $body-fontsize !default;
 $h5-fontsize: $h6-fontsize * $modularscale !default;
 $h4-fontsize: $h5-fontsize * $modularscale !default;
@@ -14,6 +13,7 @@ $h3-fontsize: $h4-fontsize * $modularscale !default;
 $h2-fontsize: $h3-fontsize * $modularscale !default;
 $h1-fontsize: $h2-fontsize * $modularscale !default;
 
+// Create a base style for headings we can then extend easily
 %heading {
     font-family: $heading-fontfamily;
     font-weight: $heading-fontweight;
@@ -22,6 +22,7 @@ $h1-fontsize: $h2-fontsize * $modularscale !default;
         bottom: 0.75em;
     }
 
+    // Create greater spacing between paragraphs and headings when the former leads
     p + & {
         margin: {
             top: 1em;
@@ -29,6 +30,7 @@ $h1-fontsize: $h2-fontsize * $modularscale !default;
     }
 }
 
+//Styling for basic heading elements
 h1 {
     @extend %heading;
     font-size: $h1-fontsize;
@@ -57,6 +59,7 @@ h6 {
     font-weight: 600;
 }
 
+// Styling for basic paragraph elements
 p {
     font-size: $body-fontsize;
     line-height: 1.25;
@@ -65,6 +68,40 @@ p {
     }
 }
 
-ul, ol, dl {
+// Styling for basic list elements
+ul, ol {
     font-size: $body-fontsize;
+    margin: 0 {
+        bottom: 1em;
+    };
+    padding: 0 {
+        left: 1.125em;
+    };
+
+    li {
+        margin: {
+            bottom: 0.5em;
+        }
+    }
+}
+
+dl {
+    font-size: $body-fontsize;
+    margin: 0 {
+        bottom: 1em;
+    };
+    padding: 0 {
+        left: 1.125em;
+    };
+
+    dt {
+        font-weight: 600;
+    }
+
+    dd {
+        margin: 0 {
+            bottom: 0.5em;
+            left: 0;
+        }
+    }
 }
