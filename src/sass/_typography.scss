@@ -1,17 +1,26 @@
 $modularscale: 1.2 !default;
-$h6-fontsize: 0.875rem !default;
+
+$body-fontsize: $fontsize-base * 0.875 !default;
+$body-fontweight: 400 !default;
+
+$heading-fontfamily: $fontfamily-base !default;
+$heading-fontweight: 400 !default;
+$heading-lineheight: 1.125 !default;
+
+$h6-fontsize: $body-fontsize !default;
 $h5-fontsize: $h6-fontsize * $modularscale !default;
 $h4-fontsize: $h5-fontsize * $modularscale !default;
 $h3-fontsize: $h4-fontsize * $modularscale !default;
 $h2-fontsize: $h3-fontsize * $modularscale !default;
 $h1-fontsize: $h2-fontsize * $modularscale !default;
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    line-height: $body-lineheight;
+%heading {
+    font-family: $heading-fontfamily;
+    font-weight: $heading-fontweight;
+    line-height: $heading-lineheight;
     margin: 0 {
         bottom: 0.75em;
-    };
+    }
 
     p + & {
         margin: {
@@ -21,29 +30,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    @extend %heading;
     font-size: $h1-fontsize;
 }
 h2 {
+    @extend %heading;
     font-size: $h2-fontsize;
 }
 h3 {
+    @extend %heading;
     font-size: $h3-fontsize;
 }
 h4 {
+    @extend %heading;
     font-size: $h4-fontsize;
+    font-weight: 600;
 }
 h5 {
+    @extend %heading;
     font-size: $h5-fontsize;
+    font-weight: 600;
 }
 h6 {
+    @extend %heading;
     font-size: $h6-fontsize;
     font-weight: 600;
 }
 
 p {
-    font-size: 0.875rem;
-    line-height: $body-lineheight;
+    font-size: $body-fontsize;
+    line-height: 1.25;
     margin: 0 {
         bottom: 1em;
     }
+}
+
+ul, ol, dl {
+    font-size: $body-fontsize;
 }
