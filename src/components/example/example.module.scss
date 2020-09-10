@@ -3,12 +3,18 @@
 .example {
     border: 1px solid colour('grey');
     border-radius: 4px;
+    margin: 0 {
+        bottom: 1rem;
+    }
     &__iframe {
-        background: colour('white');
+        background: transparent;
         border-radius: 0 0 4px 4px;
         padding: 1rem;
     }
     &__header {
+        border: 0 {
+            bottom: 1px solid colour('grey');
+        }
         font-size: 0.875rem;
         font-style: italic;
         padding: 0.5rem 1rem;
