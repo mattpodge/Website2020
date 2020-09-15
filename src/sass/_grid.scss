@@ -1,0 +1,30 @@
+// Setup the main container to be a 12 column CSS grid (default)
+.container {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 0 $gutter;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 calc(#{$gutter} / 2);
+
+    @include media($break_sm) {
+        width: 420px;
+    }
+
+    @include media($break_md) {
+        width: 640px;
+    }
+
+    @include media($break_lg) {
+        width: 960px;
+    }
+
+    @include media($break_xl) {
+        width: 1140px;
+    }
+
+    .content {
+        grid-column: 1 / span $columns;
+    }
+}
+

@@ -1,66 +1,10 @@
-/* Shared
- * Imports shared variables, mixins, and functions all in one go
- */
+// Start the project with normalize.css
+ @import-normalize;
+
+// Import global functions, mixins, and variables
 @import 'shared';
 
-/* Normalize
- * Import the Normalize.css module to start with a level field
- */
-@import-normalize;
-
-/* Global
- * Styles that apply to every section/page of the application
- */
-
- * {
-     &, &:before, &:after {
-         box-sizing: border-box;
-     }
- }
-
-html {
-    font-size: 1rem;
-    height: 100vh;
-}
-
-body {
-    background: #333;
-    color: #E6E6E6;
-    font-family: $fontfamily-base;
-    font-weight: 400;
-    line-height: 1.25;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat($columns, 1fr);
-    gap: 0 $gutter;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 0 calc(#{$gutter} / 2);
-
-    @include media($break_sm) {
-        width: 420px;
-    }
-
-    @include media($break_md) {
-        width: 640px;
-    }
-
-    @include media($break_lg) {
-        width: 960px;
-    }
-
-    @include media($break_xl) {
-        width: 1140px;
-    }
-
-    .content {
-        grid-column: 1 / span $columns;
-    }
-}
-
+// Import global styles
+@import 'base';
 @import 'typography';
+@import 'grid';
