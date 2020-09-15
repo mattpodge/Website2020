@@ -45,5 +45,13 @@
   "devDependencies": {
     "gh-pages": "^2.2.0"
   },
+  "stylelint": {
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "at-rule-no-unknown": [true, { 
+        "ignoreAtRules": ["import-normalize"]
+      }]
+    }
+  },
   "homepage": "https://mlodge.me"
 }
