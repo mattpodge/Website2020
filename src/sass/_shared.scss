@@ -1,18 +1,15 @@
-/* Functions */
+// Functions
 @import './functions/make-palette';
 @import './functions/deep-get';
 @import './functions/colour';
 
-/* Mixins */
+// Mixins
 @import './mixins/media-queries';
 
-
-/* General Variables */
+// Global variables
 @import './variables/colours';
+@import './variables/base';
 @import './variables/grid';
 
-/* Base Variables */
-@import './variables/base';
-
-/* Component Variables */
+// Component variables
 @import './variables/button';
