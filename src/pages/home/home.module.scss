@@ -14,11 +14,25 @@
      font-family: 'Roboto', sans-serif;
      line-height: 1.25;
  }
+
+ @keyframes Gradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
 .header {
     grid-column: 1 / span $columns;
 
     &__title {
         @extend %titles;
+        animation: Gradient 120s linear 10s infinite;
+        background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335, colour('grey'));
+        background-position: 100% 0%;
+        background-size: 2000%;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
         font-size: 4rem;
         font-weight: 700;
 
@@ -36,4 +50,8 @@
         font-size: 1rem;
         font-weight: 400;
     }
+}
+
+main {
+    grid-column: 1 / span $columns;
 }

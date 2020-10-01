@@ -21,6 +21,9 @@ function Home() {
                 <div className={styles.header__title}>Matt<span>hew</span> Lodge</div>
                 <div className={styles.header__subtitle}>User Interface/Experience, &amp; Graphic Design</div>
             </header>
+            <main>
+                <p>This is some text</p>
+            </main>
         </React.Fragment>
     )
 }
