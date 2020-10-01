@@ -21,12 +21,14 @@ function Home() {
         <React.Fragment>
             <header className={styles.header}>
                 <div className={styles.header__title}>Matt<span>hew</span> Lodge</div>
-                <div className={styles.header__subtitle}>User Interface/Experience, &amp; Graphic Design</div>
+                <div className={styles.header__subtitle}>User Interface, Experience, &amp; Graphic Design</div>
             </header>
-            <Post></Post>
-            <Post></Post>
-            <Post></Post>
-            <Post></Post>
+            <Post title='Hey, this is a test' link='testing'>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsum reiciendis molestias consectetur cumque atque laborum quo iusto veritatis! Corporis vitae enim deserunt tempora alias! Saepe laborum doloribus et ipsum?</p>
+            </Post>
+            <Post title='Another test' link='contact'></Post>
+            <Post title='The third test' link='recipes'></Post>
+            <Post title='And the last test' link='about'></Post>
         </React.Fragment>
     )
 }

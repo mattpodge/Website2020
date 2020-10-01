@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './post.module.scss';
 
@@ -6,10 +7,11 @@ function Post(props) {
     return (
         <div className={styles.post}>
             <div className={styles.thumbnail}>
-                <div className={styles.thumbnail__image}></div>
+                <Link className={styles.thumbnail__image} to={props.link}></Link>
             </div>
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi assumenda accusamus ut ratione ab voluptate molestias, eum beatae doloremque soluta eligendi esse suscipit, ullam adipisci, dignissimos ex aliquam earum impedit.</p>
+            <h3>{props.title}</h3>
+            {props.children}
+            <Link to={props.link}>[see &amp; read more]</Link>
         </div>
     );
 };
