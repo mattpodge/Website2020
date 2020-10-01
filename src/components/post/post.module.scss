@@ -1,0 +1,29 @@
+@import '../../sass/global';
+
+.post {
+    grid-column: span $columns;
+    margin: {
+        bottom: 2rem;
+    }
+}
+
+.thumbnail {
+    background: colour('grey', 'tone', '200');
+    margin: {
+        bottom: 1rem;
+    }
+    padding: {
+        bottom: 56.25%;
+    }
+    position: relative;
+    width: 100%;
+
+    &__image {
+        background: colour('primary');
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

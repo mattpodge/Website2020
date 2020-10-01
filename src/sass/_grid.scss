@@ -3,7 +3,7 @@
     display: grid;
     grid-auto-rows: min-content;
     grid-template-columns: repeat($columns, 1fr);
-    gap: 0 $gutter;
+    gap: calc(#{$gutter} / 2) $gutter;
     height: 100vh;
     margin: 0 auto;
     padding: 0 calc(#{$gutter} / 2);
