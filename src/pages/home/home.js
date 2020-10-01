@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 /* Stylesheets*/
-import './home.scss';
+import styles from './home.module.scss';
 
 
 function Home() {
+    
+    // Apply a class to the body element for easier specific styling
     const [pageId] = useState('homepage');
     useEffect(() => {
         document.body.classList.add(pageId);
@@ -16,8 +17,10 @@ function Home() {
 
     return(
         <React.Fragment>
-            <h1 className='heading'>mlodge.me</h1>
-            <p className='subheading'><Link to='/scratchpad'>[i'm workin' on it]</Link></p>
+            <header className={styles.header}>
+                <div className={styles.header__title}>Matt<span>hew</span> Lodge</div>
+                <div className={styles.header__subtitle}>User Interface/Experience, &amp; Graphic Design</div>
+            </header>
         </React.Fragment>
     )
 }

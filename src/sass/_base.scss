@@ -1,4 +1,6 @@
-// Base styles from where to start
+/* Base
+ * The very base level styles for the site
+ */
 
 // Reboot for all browsers to use the border-box model
 * {
@@ -13,9 +15,9 @@ html {
 }
 
 body {
-    background: #333;
-    color: #E6E6E6;
-    font-family: sans-serif;
+    background: $body-background;
+    color: $body-colour;
+    font-family: $fontfamily-base;
     font-weight: 400;
     line-height: 1.25;
     margin: 0;

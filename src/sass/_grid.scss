@@ -7,19 +7,19 @@
     margin: 0 auto;
     padding: 0 calc(#{$gutter} / 2);
 
-    @include media($break_sm) {
+    @include media($break-sm) {
         width: 420px;
     }
 
-    @include media($break_md) {
+    @include media($break-md) {
         width: 640px;
     }
 
-    @include media($break_lg) {
+    @include media($break-lg) {
         width: 960px;
     }
 
-    @include media($break_xl) {
+    @include media($break-xl) {
         width: 1140px;
     }
 

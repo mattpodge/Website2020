@@ -1,0 +1,39 @@
+/*
+ * Home
+ * Styles for the homepage specifically
+ */
+
+ // Import globals
+ @import '../../sass/global';
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ 
+ // Styles
+ %titles {
+     color: colour('grey');
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.25;
+ }
+.header {
+    grid-column: 1 / span $columns;
+
+    &__title {
+        @extend %titles;
+        font-size: 4rem;
+        font-weight: 700;
+
+        span {
+            display: none;
+
+            @include media($break-md) {
+                display: inline;
+            }
+        }
+    }
+
+    &__subtitle {
+        @extend %titles;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
