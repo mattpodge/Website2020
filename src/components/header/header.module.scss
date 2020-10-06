@@ -1,0 +1,56 @@
+/*
+ * Header
+ */
+
+ // Import globals
+ @import '../../sass/global';
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ 
+ // Styles
+ %titles {
+     color: colour('grey');
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.25;
+ }
+
+@keyframes Gradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
+.header {
+    left: 0;
+    padding: 0 16px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &__title {
+        @extend %titles;
+        animation: Gradient 120s linear 5s infinite;
+        background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335, colour('grey'));
+        background-position: 100% 0%;
+        background-size: 10000%;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        font-size: 4rem;
+        font-weight: 700;
+
+        span {
+            display: none;
+
+            @include media($break-md) {
+                display: inline;
+            }
+        }
+    }
+
+    &__subtitle {
+        @extend %titles;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

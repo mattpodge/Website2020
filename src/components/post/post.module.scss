@@ -1,7 +1,7 @@
 @import '../../sass/global';
 
 .post {
-    grid-column: span $columns;
+    grid-column: span 6;
     margin: {
         bottom: 2rem;
     }

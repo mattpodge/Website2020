@@ -14,6 +14,12 @@ html {
     height: 100vh;
 }
 
+@keyframes Gradient {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
 body {
     background: $body-background;
     color: $body-colour;
@@ -21,6 +27,33 @@ body {
     font-weight: 400;
     line-height: 1.25;
     margin: 0;
-    padding: 0;
+    padding: 80vh 0 0;
     text-align: left;
+}
+
+// Setup the main container to be a 12 column CSS grid (default)
+.container {
+    background: colour('white');
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: calc(#{$gutter} / 2) $gutter;
+    overflow: auto;
+    padding: 0 calc(#{$gutter} / 2);
+
+    @include media($break-sm) {
+        border-radius: 8px;
+        box-shadow: 0 2px 4px colour('black', 'alpha', '20');
+        margin: 0 64px;
+        max-width: 1200px;
+        width: auto;
+    }
+
+    @include media($break-xl) {
+        margin: 40px auto;
+    }
+
+    .content {
+        grid-column: 1 / span $columns;
+    }
 }
