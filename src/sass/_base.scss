@@ -1,8 +1,7 @@
-/* Base
- * The very base level styles for the site
+/*
+ * Base
  */
 
-// Reboot for all browsers to use the border-box model
 * {
     &, &:before, &:after {
         box-sizing: border-box;
@@ -14,12 +13,6 @@ html {
     height: 100vh;
 }
 
-@keyframes Gradient {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
-}
-
 body {
     background: $body-background;
     color: $body-colour;
@@ -27,33 +20,46 @@ body {
     font-weight: 400;
     line-height: 1.25;
     margin: 0;
-    padding: 80vh 0 0;
+    padding: 0;
     text-align: left;
+    
+    &:before {
+        border: {
+            top: 5px solid colour('primary');
+        }
+        content: '';
+        display: block;
+        position: sticky;
+        top: 0;
+    }
 }
 
-// Setup the main container to be a 12 column CSS grid (default)
 .container {
-    background: colour('white');
+    background: transparent;
     display: grid;
     grid-auto-rows: min-content;
     grid-template-columns: repeat($columns, 1fr);
-    gap: calc(#{$gutter} / 2) $gutter;
-    overflow: auto;
+    grid-gap: calc(#{$gutter} / 2) $gutter;
+    margin: 0 auto;
     padding: 0 calc(#{$gutter} / 2);
 
     @include media($break-sm) {
-        border-radius: 8px;
-        box-shadow: 0 2px 4px colour('black', 'alpha', '20');
-        margin: 0 64px;
-        max-width: 1200px;
-        width: auto;
+        grid-template-columns: repeat($columns-sm, 1fr);
+        width: $break-sm - 40px;
+    }
+
+    @include media($break-md) {
+        grid-template-columns: repeat($columns-md, 1fr);
+        width: $break-md - 40px;
+    }
+
+    @include media($break-lg) {
+        width: $break-lg - 40px;
     }
 
     @include media($break-xl) {
-        margin: 40px auto;
+        width: $break-xl - 40px;
     }
 
-    .content {
-        grid-column: 1 / span $columns;
-    }
+
 }

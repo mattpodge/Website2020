@@ -5,5 +5,8 @@ $break-lg: 1000px;
 $break-xl: 1220px;
 
 /* Grid Settings */
-$columns: 12;
-$gutter: calc(2 * 1rem);
+$columns: 4;
+$columns-sm: 6;
+$columns-md: 12;
+
+$gutter: 2rem;

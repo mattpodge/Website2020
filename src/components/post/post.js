@@ -5,7 +5,7 @@ import styles from './post.module.scss';
 
 function Post(props) {
     return (
-        <div className={styles.post}>
+        <div className={styles.post} {...props}>
             <div className={styles.thumbnail}>
                 <Link className={styles.thumbnail__image} to={props.link}></Link>
             </div>

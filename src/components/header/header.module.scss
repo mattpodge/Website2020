@@ -4,53 +4,69 @@
 
  // Import globals
  @import '../../sass/global';
-
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
  
  // Styles
- %titles {
-     color: colour('grey');
-     font-family: 'Roboto', sans-serif;
-     line-height: 1.25;
- }
-
-@keyframes Gradient {
-    0%{background-position:100% 0%}
-    50%{background-position:0% 100%}
-    100%{background-position:100% 0%}
-}
-
 .header {
-    left: 0;
-    padding: 0 16px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    background: $body-background;
+    display: flex;
+    grid-column: span $columns;
+    margin: 0 -1rem;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 5px;
+    z-index: 100;
 
-    &__title {
-        @extend %titles;
-        animation: Gradient 120s linear 5s infinite;
-        background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335, colour('grey'));
-        background-position: 100% 0%;
-        background-size: 10000%;
-        background-clip: text;
-        color: transparent;
-        display: inline-block;
-        font-size: 2rem;
-        font-weight: 700;
-
-        span {
-            display: none;
-
-            @include media($break-md) {
-                display: inline;
-            }
-        }
+    @include media($break-sm) {
+        grid-column: span $columns-sm;
     }
 
-    &__subtitle {
-        @extend %titles;
-        font-size: 0.875rem;
-        font-weight: 400;
+    @include media($break-md) {
+        grid-column: span $columns-md;
+    }
+    
+    &__brand {
+        align-items: center;
+        background: colour('white');
+        color: colour('black');
+        display: flex;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        justify-self: flex-start;
+        margin: {
+            right: auto;
+        }
+        width: 40px;
+    }
+
+    &__nav {
+        align-self: center;
+        justify-self: flex-end;
+        margin: {
+            left: auto;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                color: colour('white');
+                padding: 0.5em 0 0.5em 1em;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: colour('primary');
+                }
+            }
+        }
     }
 }

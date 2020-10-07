@@ -1,9 +1,13 @@
 @import '../../sass/global';
 
 .post {
-    grid-column: span 6;
+    grid-column: span $columns;
     margin: {
         bottom: 2rem;
+    }
+
+    @include media($break-md) {
+        grid-column: span $columns-md / 2;
     }
 }
 

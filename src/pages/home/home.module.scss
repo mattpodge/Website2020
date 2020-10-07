@@ -6,6 +6,23 @@
  // Import globals
  @import '../../sass/global';
 
-.section {
-    grid-column: span 12;
+.intro {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: span $columns;
+    grid-row: 1;
+    height: 80vh;
+
+    @include media($break-md) {
+        grid-column: span $columns-md;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    span {
+        color: colour('primary', 'tone', '100');
+    }
 }

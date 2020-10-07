@@ -9,13 +9,8 @@
     background: url('../../imgs/joanna-kosinska-bF2vsubyHcQ-unsplash.jpg');
     background-size: cover;
     grid-column: 1 / span $columns;
-    height: 100vh;
-    margin: 0 -16px;
-
-    @include media($break-sm) {
-        height: auto;
-        padding: {
-            bottom: 62.5%;
-        }
+    height: auto;
+    padding: {
+        bottom: 56.25%;
     }
 }
