@@ -1,14 +1,9 @@
-/* Colours
- * Theme colours and generated palettes
- */
+$primary: #3B9BB7;
+$secondary: complement($primary);
 
- $primary: #3B9BB7;
- $secondary: complement($primary);
-
- $white: #F5ECE2;
- $grey: #767676;
- $black: #0F1C33;
-
+$white: #F5ECE2;
+$grey: #767676;
+$black: #0F1C33;
 
 $colour-palettes: (
     'primary': make-palette($primary),

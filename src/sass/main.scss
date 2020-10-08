@@ -1,9 +1,9 @@
-// Start the project with normalize.css
+// Use the built-in normalize module
 @import-normalize;
 
-// Import global functions, mixins, and variables
+// Global variables, functions, and mixins
 @import 'global';
 
-// Import global styles
+// Modularised stylesheets for global elements
 @import 'base';
 @import 'typography';

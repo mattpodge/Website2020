@@ -5,7 +5,7 @@ $heading-fontfamily: $fontfamily-base !default;
 $heading-fontweight: 400 !default;
 $heading-lineheight: 1.125 !default;
 
-$modularscale: 1.2 !default; // Use a modular scale to size our headings in relation to each other
+$modularscale: 1.2 !default;
 $h6-fontsize: $body-fontsize !default;
 $h5-fontsize: $h6-fontsize * $modularscale !default;
 $h4-fontsize: $h5-fontsize * $modularscale !default;

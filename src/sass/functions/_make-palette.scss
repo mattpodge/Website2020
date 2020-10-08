@@ -1,12 +1,4 @@
-/* Make Palette
- *
- * Somewhat based around the colour palettes found in the Google Material design guidelines, this function allows us to
- * programmatically build colour palettes as best they can. These may not be perfect for every colour option out of the box
- * so you may need to tweak the numbers here if things don't quite work out.
- */
-
 @function make-palette($hex) {
-    /* Output a colour palette */
     @if (saturation($hex) > 0) {
         @return (
             'main': $hex,
@@ -31,7 +23,6 @@
                 '20': transparentize($hex, 0.8),
             )
         )
-    /* Output a greyscale palette */
     } @else {
         @return (
             'main': $hex,

@@ -1,4 +1,6 @@
-// Create a base style for headings we can then extend easily
+// Global typography styles
+
+// Placeholder for heading elements shared style
 %heading {
     font-family: $heading-fontfamily;
     font-weight: $heading-fontweight;
@@ -7,44 +9,48 @@
         bottom: 0.75em;
     }
 
-    // Create greater spacing between paragraphs and headings when the former leads
-    p + & {
+    p + &, ul + &, ol + &, dl + & {
         margin: {
             top: 1em;
         }
     }
 }
 
-//Styling for basic heading elements
+// Heading elements
 h1 {
     @extend %heading;
     font-size: $h1-fontsize;
 }
+
 h2 {
     @extend %heading;
     font-size: $h2-fontsize;
 }
+
 h3 {
     @extend %heading;
     font-size: $h3-fontsize;
 }
+
 h4 {
     @extend %heading;
     font-size: $h4-fontsize;
     font-weight: 600;
 }
+
 h5 {
     @extend %heading;
     font-size: $h5-fontsize;
     font-weight: 600;
 }
+
 h6 {
     @extend %heading;
     font-size: $h6-fontsize;
     font-weight: 600;
 }
 
-// Styling for basic paragraph elements
+// Body copy elements
 p {
     font-size: $body-fontsize;
     line-height: 1.25;
@@ -53,7 +59,6 @@ p {
     }
 }
 
-// Styling for basic list elements
 ul, ol {
     font-size: $body-fontsize;
     margin: 0 {
