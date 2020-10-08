@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from './components/header';
-import { Home, WorkTwo, WorkOne } from './pages';
+import { Home, Work } from './pages';
 
 function Selena() {
   return (
@@ -9,8 +9,7 @@ function Selena() {
         <Header></Header>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/work-one' component={WorkOne} />
-          <Route component={WorkTwo} />
+          <Route path='/work/:slug' component={Work} />
         </Switch>
     </Router>
   );
