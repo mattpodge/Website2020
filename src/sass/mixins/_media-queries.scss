@@ -1,3 +1,4 @@
+// Simple mixin for media-query outputs
 @mixin media($breakpoint) {
     @media (min-width: $breakpoint) {
         @content

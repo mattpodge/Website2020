@@ -1,28 +1,18 @@
-/*
- * Header
- */
+// Header component
 
- // Import globals
- @import '../../sass/global';
- 
- // Styles
+// Functions, mixins, and variables
+@import '../../sass/global';
+
+// Styles
 .header {
     background: $body-background;
     display: flex;
-    grid-column: span $columns;
+    @include span-columns;
     margin: 0 -1rem;
     padding: 0.5rem 1rem;
     position: sticky;
     top: 5px;
     z-index: 100;
-
-    @include media($break-sm) {
-        grid-column: span $columns-sm;
-    }
-
-    @include media($break-md) {
-        grid-column: span $columns-md;
-    }
     
     &__brand {
         align-items: center;

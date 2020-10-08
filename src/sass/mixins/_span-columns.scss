@@ -1,0 +1,11 @@
+@mixin span-columns() {
+    grid-column: span $columns;
+
+    @include media($break-sm) {
+        grid-column: span $columns-sm;
+    }
+
+    @include media($break-md) {
+        grid-column: span $columns-md;
+    }
+}

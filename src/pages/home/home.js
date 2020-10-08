@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+// Components
 import { Post } from '../../components/post';
 
+// Styles
 import styles from './home.module.scss';
 
 function Home() {
@@ -22,16 +24,10 @@ function Home() {
                 <p>...and I'm a <span>User Interface Designer</span> based in <span>Milton Keynes, England</span>. I've previously had roles as a <span>Graphic Designer</span>, and <span>User Experience Designer</span>.</p>
                 <p>I'm currently looking for a <span>full-time position</span>.</p>
             </div>
-            <Post title='Hey, this is a test' link='example-1' id='work'>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsum reiciendis molestias consectetur cumque atque laborum quo iusto veritatis! Corporis vitae enim deserunt tempora alias! Saepe laborum doloribus et ipsum?</p>
-            </Post>
-            <Post title='Another test' link='example-2'></Post>
-            <Post title='The third test' link='example-3'></Post>
-            <Post title='And the last test' link='example-4'></Post>
-            <Post title='The third test' link='example-5'></Post>
-            <Post title='And the last test' link='example-6'></Post>
-            <Post title='The third test' link='example-8'></Post>
-            <Post title='And the last test' link='example-9'></Post>
+            <Post title='Work Example One' link='work-one' id='work'></Post>
+            <Post title='Work Example Two' link='work-two'></Post>
+            <Post title='Work Example Three' link='work-three'></Post>
+            <Post title='Work Example Four' link='work-four'></Post>
         </React.Fragment>
     )
 }

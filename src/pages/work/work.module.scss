@@ -1,0 +1,9 @@
+// Work page
+
+// Functions, mixins, and variables
+@import '../../sass/global';
+
+// Styles
+.content {
+    @include span-columns;
+}

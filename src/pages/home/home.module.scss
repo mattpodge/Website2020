@@ -1,28 +1,22 @@
-/*
- * Home
- * Styles for the homepage specifically
- */
+// Home page
 
- // Import globals
- @import '../../sass/global';
+// Functions, mixins, and variables
+@import '../../sass/global';
 
+// Styles
 .intro {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    grid-column: span $columns;
+    @include span-columns;
     grid-row: 1;
     height: 80vh;
-
-    @include media($break-md) {
-        grid-column: span $columns-md;
-    }
 
     p {
         font-size: 1rem;
     }
 
     span {
-        color: colour('primary', 'tone', '100');
+        color: colour('primary', 'light');
     }
 }

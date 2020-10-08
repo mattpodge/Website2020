@@ -1,7 +1,11 @@
+// Post component
+
+// Functions, mixins, and variables
 @import '../../sass/global';
 
+// Styles
 .post {
-    grid-column: span $columns;
+    @include span-columns;
     margin: {
         bottom: 2rem;
     }
