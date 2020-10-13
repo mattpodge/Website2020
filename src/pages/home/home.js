@@ -6,6 +6,9 @@ import { Post } from '../../components/post';
 // Styles
 import styles from './home.module.scss';
 
+// Data
+import pages from '../../data';
+
 function Home() {
     
     // Apply a class to the body element for easier specific styling
@@ -24,10 +27,10 @@ function Home() {
                 <p>...and I'm a <span>User Interface Designer</span> based in <span>Milton Keynes, England</span>. I've previously had roles as a <span>Graphic Designer</span>, and <span>User Experience Designer</span>.</p>
                 <p>I'm currently looking for a <span>full-time position</span>.</p>
             </div>
-            <Post title='Work Example One' link='work-one' id='work'></Post>
-            <Post title='Work Example Two' link='work-two'></Post>
-            <Post title='Work Example Three' link='work-three'></Post>
-            <Post title='Work Example Four' link='work-four'></Post>
+            {pages.map(post => (
+                <Post key={post.id} title={post.title} link={post.slug}></Post>
+            ))}
+            
         </React.Fragment>
     )
 }

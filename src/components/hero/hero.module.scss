@@ -6,11 +6,18 @@
 // Styles
 .hero {
     background: colour('secondary');
-    background-size: cover;
     @include span-columns;
     grid-row: 1;
     height: auto;
+    overflow: hidden;
     padding: {
         bottom: 56.25%; // Maintain 16:9 dimensions
+    }
+    position: relative;
+
+    img {
+        height: auto;
+        position: absolute;
+        width: 100%;
     }
 }

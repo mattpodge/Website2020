@@ -4,7 +4,9 @@ import styles from './hero.module.scss';
 
 function Hero(props) {
     return (
-        <div className={styles.hero}></div>
+        <div className={styles.hero}>
+            <img src={props.img} alt={props.alt}/>
+        </div>
     );
 };
 

@@ -7,3 +7,20 @@
 .content {
     @include span-columns;
 }
+
+.work {
+    background: colour('secondary');
+    @include span-columns;
+    height: auto;
+    overflow: hidden;
+    padding: {
+        bottom: 56.25%; // Maintain 16:9 dimensions
+    }
+    position: relative;
+
+    img {
+        height: auto;
+        position: absolute;
+        width: 100%;
+    }
+}
