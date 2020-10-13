@@ -95,3 +95,14 @@ dl {
         }
     }
 }
+
+// Links
+a {
+    &, &:visited {
+        color: colour('primary', 'light');
+    }
+
+    &:hover {
+        color: colour('secondary', 'light');
+    }
+}

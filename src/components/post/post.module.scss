@@ -6,19 +6,21 @@
 // Styles
 .post {
     @include span-columns;
-    margin: {
-        bottom: 2rem;
-    }
 
     @include media($break-md) {
         grid-column: span $columns-md / 2;
+    }
+
+    &__title {
+        font-size: 1rem;
+        margin: 0;
     }
 }
 
 .thumbnail {
     background: colour('grey', 'tone', '200');
     margin: {
-        bottom: 1rem;
+        bottom: 0.5rem;
     }
     padding: {
         bottom: 56.25%;

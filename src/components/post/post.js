@@ -9,9 +9,8 @@ function Post(props) {
             <div className={styles.thumbnail}>
                 <Link className={styles.thumbnail__image} to={'/work/' + props.link}></Link>
             </div>
-            <h3>{props.title}</h3>
+            <h2 className={styles.post__title}>{props.title}</h2>
             {props.children}
-            <Link to={'/work/' + props.link}>[see &amp; read more]</Link>
         </div>
     );
 };

@@ -6,14 +6,14 @@ import styles from './header.module.scss';
 function Header(props) {
     return (
         <header className={styles.header}>
-            <div className={styles.header__brand}>M</div>
+            <Link to='/' className={styles.header__brand}>M</Link>
             <nav className={styles.header__nav}>
                 <ul>
                     <li>
-                        <Link to={{ pathname: '', hash: 'work'}}>Work</Link>
+                        <Link to='/about'>About</Link>
                     </li>
                     <li>
-                        <Link to='/resume'>Resume</Link>
+                        <a href={require('../../files/Resume-Matthew_Lodge.pdf')}>Resume</a>
                     </li>
                 </ul>
             </nav>

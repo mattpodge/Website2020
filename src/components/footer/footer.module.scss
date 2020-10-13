@@ -8,9 +8,11 @@
     border: {
         top: 1px solid colour('white');
     }
+    font-size: 0.75rem;
     @include span-columns;
     margin: {
         top: 2rem;
     }
     padding: 1rem 0 4rem;
+    text-align: right;
 }

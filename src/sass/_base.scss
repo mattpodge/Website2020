@@ -36,7 +36,7 @@ body {
     display: grid;
     grid-auto-rows: min-content;
     grid-template-columns: repeat($columns, 1fr);
-    grid-gap: calc(#{$gutter} / 2) $gutter;
+    grid-gap: $gutter;
     margin: 0 auto;
     padding: 0 calc(#{$gutter} / 2);
 

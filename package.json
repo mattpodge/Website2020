@@ -15,7 +15,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-obfuscate": "^3.6.7",
+    "react-obfuscate": "^3.6.8",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3"
   },
@@ -48,9 +48,14 @@
   "stylelint": {
     "extends": "stylelint-config-recommended",
     "rules": {
-      "at-rule-no-unknown": [true, { 
-        "ignoreAtRules": ["import-normalize"]
-      }]
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "import-normalize"
+          ]
+        }
+      ]
     }
   },
   "homepage": "https://mlodge.me"
