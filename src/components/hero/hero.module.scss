@@ -5,7 +5,7 @@
 
 // Styles
 .hero {
-    background: url('../../imgs/joanna-kosinska-bF2vsubyHcQ-unsplash.jpg');
+    background: colour('secondary');
     background-size: cover;
     @include span-columns;
     grid-row: 1;
