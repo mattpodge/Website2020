@@ -16,7 +16,6 @@
     
     &__brand {
         align-items: center;
-        background: colour('white');
         color: colour('black');
         display: flex;
         font-weight: 700;
@@ -27,6 +26,24 @@
             right: auto;
         }
         width: 40px;
+
+        svg {
+            rect {
+                fill: transparent;
+            }
+            path {
+                transition: all 0.3s linear;
+                fill: colour('white');
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: colour('primary', 'light');
+                }
+            }
+        }
     }
 
     &__nav {
@@ -52,9 +69,10 @@
                 padding: 0.5em 0 0.5em 1em;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition: all 0.3s linear;
 
                 &:hover {
-                    color: colour('primary');
+                    color: colour('primary', 'light');
                 }
             }
         }

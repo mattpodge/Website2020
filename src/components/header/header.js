@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../imgs/m_logo.svg';
+import { ReactComponent as Logo} from '../../imgs/m_logo.svg';
 
 import styles from './header.module.scss';
 
@@ -9,7 +9,7 @@ function Header(props) {
     return (
         <header className={styles.header}>
             <Link to='/' className={styles.header__brand}>
-                <img src={logo} alt='Stylised M logo' />
+                <Logo></Logo>
             </Link>
             <nav className={styles.header__nav}>
                 <ul>
