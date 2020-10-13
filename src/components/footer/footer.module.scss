@@ -1,0 +1,16 @@
+// Header component
+
+// Functions, mixins, and variables
+@import '../../sass/global';
+
+// Styles
+.footer {
+    border: {
+        top: 1px solid colour('white');
+    }
+    @include span-columns;
+    margin: {
+        top: 2rem;
+    }
+    padding: 1rem 0 4rem;
+}
