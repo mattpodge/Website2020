@@ -1,0 +1,23 @@
+// About page
+
+// Functions, mixins, and variables
+@import '../../sass/global';
+
+// Styles
+.content {
+    @include span-columns;
+
+    @include media($break-md) {
+        grid-column: 5 / span 8;
+        grid-row: 2;
+    }
+}
+
+.aside {
+    @include span-columns;
+
+    @include media($break-md) {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+}
