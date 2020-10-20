@@ -4,20 +4,50 @@
 @import '../../sass/global';
 
 // Styles
+.heading {
+    @include span-columns;
+
+    @include media($break-md) {
+        grid-column: 4 / span 9;
+        grid-row: 2;
+    }
+
+    h1 {
+        margin: {
+            bottom: 0;
+        }
+    }
+
+    span {
+        color: colour('primary', 'light');
+    }
+
+}
+
 .content {
     @include span-columns;
 
     @include media($break-md) {
-        grid-column: 5 / span 8;
-        grid-row: 2;
+        grid-column: 4 / span 9;
+        grid-row: 3;
     }
+
+    span {
+        color: colour('primary', 'light');
+    }
+
 }
 
 .aside {
     @include span-columns;
 
     @include media($break-md) {
-        grid-column: 1 / span 4;
-        grid-row: 2;
+        grid-column: 1 / span 3;
+        grid-row: 3;
     }
+}
+
+.headshot {
+    height: auto;
+    width: 100%;
 }
