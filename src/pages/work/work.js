@@ -25,7 +25,7 @@ function Work() {
                     </main> 
                     {w.imgs ? w.imgs.map((i, index) => (
                         <div key={index} className={styles.work}>
-                            <img src={i.img} alt={i.alt}/>
+                            <img src={i.img[0].src} srcSet={i.img[0].srcset + ' 2x'} alt={i.img[0].alt}/>
                         </div>
                     )) : null }
                 </>
