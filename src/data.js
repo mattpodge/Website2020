@@ -1,34 +1,27 @@
 export default [
     {
         id: 1,
-        slug: 'work-one',
-        title: 'Work Example One',
-        hero: require('./imgs/unsplash-01.jpg'),
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        slug: 'project-lighthouse',
+        title: '\'Lighthouse\' Project',
+        hero: require('./imgs/lighthouse_hero.png'),
+        desc: 'New product/redsign project whilst at WorkForce Software. The project was focused on updating our legacy product suite to move over to a modern framework, and in this case, deliver a dashboard that both managers and employees could access on any device, in order to manage their schedules.',
         imgs: [
-            { img: require('./imgs/unsplash-03.jpg') },
-            { img: require('./imgs/unsplash-04.jpg') },
-            { img: require('./imgs/unsplash-05.jpg') },
-            { img: require('./imgs/unsplash-06.jpg') },
+            { img: require('./imgs/lighthouse_manager.png') },
+            { img: require('./imgs/lighthouse_employee.png') },
+            { img: require('./imgs/lighthouse_sap.png') },
         ]
     },
     {
         id: 2,
-        slug: 'work-two',
-        title: 'Work Example Two',
-        hero: require('./imgs/unsplash-02.jpg'),
-        desc: 'This is some test content loaded dynamically',
-    },
-    {
-        id: 3,
-        slug: 'work-three',
-        title: 'Work Example Three',
-        hero: require('./imgs/unsplash-03.jpg'),
-        desc: 'This is some test content loaded dynamically',
+        slug: 'project-herald',
+        title: '\'Herald\' Project',
+        hero: require('./imgs/herald_hero.png'),
+        desc: 'Another redesign project at WorkForce Software, done in tandem with the \'Lighthouse\' Project. This was focused on the schedule creation engine that was being built from the ground up to replace our legacy product, The focus here was around flexibility and going from macro to micro control of shifts.' ,
         imgs: [
-            { img: require('./imgs/unsplash-01.jpg') },
-            { img: require('./imgs/unsplash-03.jpg') },
-            { img: require('./imgs/unsplash-05.jpg') },
+            { img: require('./imgs/herald_scheduling.png') },
+            { img: require('./imgs/herald_scheduling-2.png') },
+            { img: require('./imgs/herald_tasking.png') },
         ]
+
     },
 ]

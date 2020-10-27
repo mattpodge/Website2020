@@ -18,10 +18,11 @@
 }
 
 .thumbnail {
-    background: colour('grey', 'tone', '200');
+    border-radius: 2px;
     margin: {
         bottom: 0.5rem;
     }
+    overflow: hidden;
     padding: {
         bottom: 56.25%;
     }
@@ -29,11 +30,16 @@
     width: 100%;
 
     &__image {
-        background: colour('primary');
         bottom: 0;
         left: 0;
         position: absolute;
         right: 0;
         top: 0;
+
+        img {
+            height: auto;
+            position: absolute;
+            width: 100%;
+        }    
     }
 }
