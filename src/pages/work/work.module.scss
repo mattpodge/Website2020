@@ -9,19 +9,30 @@
 }
 
 .work {
-    background: colour('secondary');
-    border-radius: 2px;
     @include span-columns;
-    height: auto;
-    overflow: hidden;
-    padding: {
-        bottom: 56.25%; // Maintain 16:9 dimensions
-    }
-    position: relative;
 
-    img {
+    &__image {
+        background: colour('primary','dark');
+        border-radius: 2px;
         height: auto;
-        position: absolute;
-        width: 100%;
+        overflow: hidden;
+        margin: {
+            bottom: 1rem;
+        }
+        padding: {
+            bottom: 56.25%; // Maintain 16:9 dimensions
+        }
+        position: relative;
+
+        img {
+            height: auto;
+            position: absolute;
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        font-style: italic;
+        max-width: 100%;
     }
 }

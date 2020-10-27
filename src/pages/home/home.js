@@ -28,7 +28,7 @@ function Home() {
                 <p>I'm currently looking for a <span>full-time position</span>.</p>
             </div>
             {pages.map(post => (
-                <Post key={post.id} title={post.title} hero={post.hero} link={post.slug}></Post>
+                <Post key={post.id} data={post} link={post.slug}></Post>
             ))}
             
         </React.Fragment>
