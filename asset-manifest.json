@@ -1,31 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b7ec95e.chunk.css",
-    "main.js": "/static/js/main.93f3935b.chunk.js",
-    "main.js.map": "/static/js/main.93f3935b.chunk.js.map",
+    "main.css": "/static/css/main.d25f5039.chunk.css",
+    "main.js": "/static/js/main.83116ef9.chunk.js",
+    "main.js.map": "/static/js/main.83116ef9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e8fb2a12.js",
     "runtime-main.js.map": "/static/js/runtime-main.e8fb2a12.js.map",
-    "static/js/2.b063c594.chunk.js": "/static/js/2.b063c594.chunk.js",
-    "static/js/2.b063c594.chunk.js.map": "/static/js/2.b063c594.chunk.js.map",
+    "static/js/2.be32bf7d.chunk.js": "/static/js/2.be32bf7d.chunk.js",
+    "static/js/2.be32bf7d.chunk.js.map": "/static/js/2.be32bf7d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b5a018d73adc10ee8aed9c9a09639184.js": "/precache-manifest.b5a018d73adc10ee8aed9c9a09639184.js",
+    "precache-manifest.04e630183f4f4cf962f8fcb17bdf0729.js": "/precache-manifest.04e630183f4f4cf962f8fcb17bdf0729.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1b7ec95e.chunk.css.map": "/static/css/main.1b7ec95e.chunk.css.map",
-    "static/js/2.b063c594.chunk.js.LICENSE.txt": "/static/js/2.b063c594.chunk.js.LICENSE.txt",
+    "static/css/main.d25f5039.chunk.css.map": "/static/css/main.d25f5039.chunk.css.map",
+    "static/js/2.be32bf7d.chunk.js.LICENSE.txt": "/static/js/2.be32bf7d.chunk.js.LICENSE.txt",
     "static/media/Resume-Matthew_Lodge.pdf": "/static/media/Resume-Matthew_Lodge.592112cd.pdf",
     "static/media/ben-nevis-shot.png": "/static/media/ben-nevis-shot.dfe5149c.png",
-    "static/media/m_logo.78df5966.svg": "/static/media/m_logo.78df5966.svg",
-    "static/media/unsplash-01.jpg": "/static/media/unsplash-01.d5990f15.jpg",
-    "static/media/unsplash-02.jpg": "/static/media/unsplash-02.30ec6149.jpg",
-    "static/media/unsplash-03.jpg": "/static/media/unsplash-03.edd42046.jpg",
-    "static/media/unsplash-04.jpg": "/static/media/unsplash-04.3de018fd.jpg",
-    "static/media/unsplash-05.jpg": "/static/media/unsplash-05.7d564b39.jpg",
-    "static/media/unsplash-06.jpg": "/static/media/unsplash-06.12bc1061.jpg"
+    "static/media/herald_hero.png": "/static/media/herald_hero.5354a120.png",
+    "static/media/herald_scheduling-2.png": "/static/media/herald_scheduling-2.eba46136.png",
+    "static/media/herald_scheduling.png": "/static/media/herald_scheduling.24126e88.png",
+    "static/media/herald_tasking.png": "/static/media/herald_tasking.3899f427.png",
+    "static/media/lighthouse_employee.png": "/static/media/lighthouse_employee.3df3d0d8.png",
+    "static/media/lighthouse_hero.png": "/static/media/lighthouse_hero.0853bea2.png",
+    "static/media/lighthouse_manager.png": "/static/media/lighthouse_manager.b09e64be.png",
+    "static/media/lighthouse_sap.png": "/static/media/lighthouse_sap.3e4496c8.png",
+    "static/media/m_logo.78df5966.svg": "/static/media/m_logo.78df5966.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e8fb2a12.js",
-    "static/js/2.b063c594.chunk.js",
-    "static/css/main.1b7ec95e.chunk.css",
-    "static/js/main.93f3935b.chunk.js"
+    "static/js/2.be32bf7d.chunk.js",
+    "static/css/main.d25f5039.chunk.css",
+    "static/js/main.83116ef9.chunk.js"
   ]
 }
