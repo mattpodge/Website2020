@@ -17,7 +17,7 @@ function Header(props) {
                         <Link to='/about'>About</Link>
                     </li>
                     <li>
-                        <a href={require('../../files/Resume-Matthew_Lodge.pdf')}>Resume</a>
+                        <a href={require('../../files/Resume-Matthew_Lodge_Dec2020.pdf')}>Resume</a>
                     </li>
                 </ul>
             </nav>

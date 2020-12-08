@@ -17,13 +17,13 @@ function About(props) {
             <aside className={styles.aside}>
                 <h6>On Rotation...</h6>
                 <dl>
-                    <dt>Mouth Dreams</dt>
-                    <dd>Niel Cicierega</dd>
+                    <dt>Alive 2007</dt>
+                    <dd>Daft Punk</dd>
                 </dl>
                 <h6>Playing...</h6>
                 <dl>
-                    <dt>Hades</dt>
-                    <dd>Supergiant Games</dd>
+                    <dt>Kentucky Route Zero</dt>
+                    <dd>Cardboard Computer</dd>
                 </dl>
                 <h6>Here's Me</h6>
                 <img className={styles.headshot} src={image} alt="Matthew Lodge sat at the peak of Ben Nevis, enjoying a glass of Scotch" />
