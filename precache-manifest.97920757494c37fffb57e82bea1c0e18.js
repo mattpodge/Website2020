@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4fc1ccdbb6f282c955693d1fd1b46ed",
+    "revision": "3656e26ea5449f35c2f804824147f741",
     "url": "/index.html"
   },
   {
-    "revision": "ba42afdbf311a7bdf7ea",
+    "revision": "f6ea74ef7ebc42a93efb",
     "url": "/static/css/main.89094b5a.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e098e1d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba42afdbf311a7bdf7ea",
-    "url": "/static/js/main.3fb978b2.chunk.js"
+    "revision": "f6ea74ef7ebc42a93efb",
+    "url": "/static/js/main.c72ed04f.chunk.js"
   },
   {
     "revision": "e799a4e24fdd0bec77a6",
     "url": "/static/js/runtime-main.e8fb2a12.js"
   },
   {
-    "revision": "592112cd343f053ab9540b95d542e2fd",
-    "url": "/static/media/Resume-Matthew_Lodge.592112cd.pdf"
+    "revision": "25a69e50e9de0a3a575738e8d5e81ee0",
+    "url": "/static/media/Resume-Matthew_Lodge_Dec2020.25a69e50.pdf"
   },
   {
     "revision": "dfe5149c7944774f33b0af4baa40103e",
