@@ -26,7 +26,7 @@ function Work() {
                     {w.imgs ? w.imgs.map((i, index) => (
                         <div className={styles.work}>
                             <div key={index} className={styles.work__image}>
-                                <img src={i.img[0].src} srcSet={i.img[0].srcset + ' 2x'} alt={i.img[0].alt}/>
+                                <img src={i.img[0].src} srcSet={i.img[0].srcset + ' 2x'} alt={i.img[0].alt} />
                             </div>
                             <p className={styles.work__caption}>{i.img[0].caption}</p>
                         </div>
